@@ -1,0 +1,29 @@
+<div fxLayoutAlign='center center' fxFlex='100'>
+    <!-- <h5>{{userName}}</h5> -->
+    <div fxFlex='30' fxFlex.xs=95 fxFlex.sm=50 fxFlex.md=40 fxLayout='column'>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <mat-form-field appearance="outline">
+                <mat-label>email</mat-label>
+                <input matInput placeholder="email" formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>first Name</mat-label>
+                <input matInput placeholder="First Name" formControlName="password">
+            </mat-form-field>
+            <div fxFlex=100 fxLayoutAlign="space-between center" fxLayout='row'>
+
+                <div routerLink='/signup'>create Account</div>
+
+                <button>Next</button>
+            </div>
+        </form>
+        <!-- <mat-form-field appearance="outline">
+            <mat-label>first Name</mat-label>
+            <input matInput placeholder="First Name" [(ngModel)]="userName">
+        </mat-form-field> -->
+
+    </div>
+
+
+
+</div>
